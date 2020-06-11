@@ -1,6 +1,5 @@
 package data.service;
 
-import data.dto.SellerCompanyDto;
 import data.dto.SellerDto;
 
 public interface SellerServiceInter {

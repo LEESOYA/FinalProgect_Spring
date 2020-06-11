@@ -1,6 +1,5 @@
 package data.dao;
 
-import data.dto.SellerCompanyDto;
 import data.dto.SellerDto;
 
 public interface SellerDaoInter {

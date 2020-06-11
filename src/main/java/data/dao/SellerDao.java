@@ -3,7 +3,6 @@ package data.dao;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import data.dto.SellerCompanyDto;
 import data.dto.SellerDto;
 
 @Repository

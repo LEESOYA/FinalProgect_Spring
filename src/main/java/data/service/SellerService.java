@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import data.dao.SellerDaoInter;
-import data.dto.SellerCompanyDto;
 import data.dto.SellerDto;
 
 @Service
