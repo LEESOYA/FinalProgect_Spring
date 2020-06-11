@@ -2,9 +2,9 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="data.dto.TestDto" alias="test_dto"/>
+		<typeAlias type="data.dto.SellerDto" alias="sdto"/>
 	</typeAliases> 
 	<mappers>
-		<mapper resource="mybatis/setting/Sql.xml"/>
+		<mapper resource="mybatis/setting/SellerSql.xml"/>
 	</mappers>
 </configuration>
