@@ -1,10 +1,10 @@
-package data.service;
+package data.seller.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import data.dao.SellerDaoInter;
 import data.dto.SellerDto;
+import data.seller.dao.SellerDaoInter;
 
 @Service
 public class SellerService implements SellerServiceInter {
@@ -19,9 +19,4 @@ public class SellerService implements SellerServiceInter {
 		dao.insertSellerCompany(dto);
 	}
 
-//	@Override
-//	public void insertSellerCompany(SellerCompanyDto dto) {
-//		// TODO Auto-generated method stub
-//		dao.insertSellerCompany(dto);
-//	}
 }

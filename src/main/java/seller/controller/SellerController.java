@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import data.dto.SellerDto;
-import data.service.SellerServiceInter;
+import data.seller.service.SellerServiceInter;
 import upload.util.SpringFileWrite;
 
 @RestController
@@ -42,13 +42,13 @@ public class SellerController {
 		return saveImagename; //파일명 리턴
 		}
 
+	//판매자 insert (seller, seller_company)
 	@PostMapping("/seller/add")
 	public String insert(@RequestBody SellerDto dto) {
-		System.out.println(dto.getSeller_id());
 		//전달받은 dto에서 저장할 이미지명은 변경후 db에 insert
 		dto.setSeller_company_image(saveImagename);
 		service.insertSeller(dto);
-		
+
 		return "seller Insert Success";
 	}
 }

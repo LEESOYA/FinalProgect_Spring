@@ -23,7 +23,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="spring.form.acorn,data.*, *.controller" />
+	<context:component-scan base-package="spring.form.acorn,data.*.*, *.controller" />
 	
 	<!-- file Upload -->
     <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

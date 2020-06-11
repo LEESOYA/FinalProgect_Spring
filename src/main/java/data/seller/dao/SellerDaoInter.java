@@ -1,4 +1,4 @@
-package data.dao;
+package data.seller.dao;
 
 import data.dto.SellerDto;
 
