@@ -21,5 +21,4 @@ public class SellerDao extends SqlSessionDaoSupport implements SellerDaoInter {
 		// TODO Auto-generated method stub
 		getSqlSession().insert("insertOfSellerCompany", dto);
 	}
-	
 }

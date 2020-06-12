@@ -18,5 +18,4 @@ public class SellerService implements SellerServiceInter {
 		dao.insertSeller(dto);
 		dao.insertSellerCompany(dto);
 	}
-
 }

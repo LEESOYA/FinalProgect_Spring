@@ -1,4 +1,4 @@
-package seller.controller;
+package data.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -44,7 +44,7 @@ public class SellerController {
 
 	//판매자 insert (seller, seller_company)
 	@PostMapping("/seller/add")
-	public String insert(@RequestBody SellerDto dto) {
+	public String insertSeller(@RequestBody SellerDto dto) {
 		//전달받은 dto에서 저장할 이미지명은 변경후 db에 insert
 		dto.setSeller_company_image(saveImagename);
 		service.insertSeller(dto);
