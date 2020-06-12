@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="login">
+	<insert id="insertOfLogin"  parameterType="ldto">
+		insert into user(user_nickname, user_name, user_email, user_birth, user_hp, user_pass, user_addr,user_sign_date) 
+		values 
+		(#{user_nickname},#{user_name},#{user_email},#{user_birth},#{user_hp},#{user_pass},#{user_addr},now())
+	</insert>
+	<select id="checkPassOfLogin" parameterType="HashMap" resultType="int">
+		select count(*) from user where user_email=#{user_email} and user_pass=#{user_pass}
+	</select>
+	<select id="checkPassOfLogin2" parameterType="String" resultType="ldto">
+		select * from user where user_email=#{user_email}
+	</select>		
+		
+		 
+</mapper>
+
+
